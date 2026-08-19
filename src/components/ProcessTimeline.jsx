@@ -34,13 +34,13 @@ const ProcessTimeline = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <span className="text-xs font-bold uppercase tracking-widest text-sage font-sans">
+          <span className="text-xs font-extrabold uppercase tracking-widest text-forest-deep font-sans">
             Simple 4-Step Process
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold font-serif text-forest-deep">
             How It Works
           </h2>
-          <p className="text-charcoal/70 text-sm sm:text-base">
+          <p className="text-gray-800 text-sm sm:text-base">
             From initial inquiry to immaculate final walkthrough, we keep landscaping straightforward and dependable.
           </p>
         </div>
@@ -51,14 +51,14 @@ const ProcessTimeline = () => {
             return (
               <div
                 key={step.number}
-                className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm relative flex flex-col justify-between hover:shadow-md hover:border-sage/40 transition-all duration-300 group"
+                className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm relative flex flex-col justify-between hover:shadow-md hover:border-forest-deep/40 transition-all duration-300 group"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-3xl font-black font-serif text-lime-500">
+                    <span className="text-3xl font-black font-serif text-forest-deep">
                       {step.number}
                     </span>
-                    <div className="w-10 h-10 rounded-xl bg-sage/15 border border-sage/30 flex items-center justify-center text-forest group-hover:scale-110 transition-transform">
+                    <div className="w-10 h-10 rounded-xl bg-sage/15 border border-sage/30 flex items-center justify-center text-forest-deep group-hover:scale-110 transition-transform">
                       <Icon className="w-5 h-5" />
                     </div>
                   </div>
@@ -66,13 +66,13 @@ const ProcessTimeline = () => {
                   <h3 className="text-lg font-bold font-serif text-forest-deep">
                     {step.title}
                   </h3>
-                  <p className="text-xs text-charcoal/70 leading-relaxed">
+                  <p className="text-xs text-gray-800 leading-relaxed">
                     {step.description}
                   </p>
                 </div>
 
-                <div className="mt-6 pt-4 border-t border-gray-100 flex items-center gap-2 text-[11px] text-sage font-semibold">
-                  <span className="w-2 h-2 rounded-full bg-lime-500"></span>
+                <div className="mt-6 pt-4 border-t border-gray-100 flex items-center gap-2 text-xs text-forest-deep font-bold">
+                  <span className="w-2 h-2 rounded-full bg-forest-deep"></span>
                   <span>Step {index + 1} of 4</span>
                 </div>
               </div>

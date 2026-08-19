@@ -99,18 +99,18 @@ const Footer = ({ onOpenEstimate, onOpenTerms, onOpenPrivacy }) => {
               <span>106 Kings Park Dr, Liverpool, NY 13090</span>
             </div>
             <div className="flex items-center gap-3 text-sm text-sand/90">
-              <Clock className="w-5 h-5 text-sage shrink-0" />
+              <Clock className="w-5 h-5 text-lime-400 shrink-0" />
               <span>Monday – Saturday: 7:00 AM – 6:00 PM</span>
             </div>
             <div className="flex items-center gap-3 text-sm text-sand/90">
-              <Phone className="w-5 h-5 text-sage shrink-0" />
-              <a href="tel:7745045296" className="hover:text-lime-400 transition-colors font-semibold">
+              <Phone className="w-5 h-5 text-lime-400 shrink-0" />
+              <a href="tel:7745045296" className="hover:text-lime-400 transition-colors font-semibold text-white">
                 (774) 504-5296
               </a>
             </div>
             <div className="flex items-center gap-3 text-sm text-sand/90">
-              <Mail className="w-5 h-5 text-sage shrink-0" />
-              <a href="mailto:albany@kdtreeservices.com" className="hover:text-lime-400 transition-colors break-all">
+              <Mail className="w-5 h-5 text-lime-400 shrink-0" />
+              <a href="mailto:albany@kdtreeservices.com" className="hover:text-lime-400 transition-colors break-all text-white">
                 albany@kdtreeservices.com
               </a>
             </div>
@@ -119,26 +119,26 @@ const Footer = ({ onOpenEstimate, onOpenTerms, onOpenPrivacy }) => {
         </div>
 
         {/* Bottom Bar with Legal Links */}
-        <div className="pt-8 border-t border-forest-light/40 flex flex-col md:flex-row items-center justify-between text-xs text-sand/70 gap-4">
+        <div className="pt-8 border-t border-forest-light/40 flex flex-col md:flex-row items-center justify-between text-xs text-white/90 gap-4">
           <p>© 2026 J Landscaping LLC. All Rights Reserved.</p>
           
           <div className="flex items-center gap-4 text-xs">
             <button
               onClick={onOpenPrivacy}
-              className="text-sand/80 hover:text-lime-400 underline transition-colors focus-ring"
+              className="text-white/90 hover:text-lime-400 underline transition-colors focus-ring"
             >
               Privacy Policy
             </button>
             <span>•</span>
             <button
               onClick={onOpenTerms}
-              className="text-sand/80 hover:text-lime-400 underline transition-colors focus-ring"
+              className="text-white/90 hover:text-lime-400 underline transition-colors focus-ring"
             >
               Terms &amp; Conditions
             </button>
           </div>
 
-          <div className="flex items-center gap-3 text-sand/60">
+          <div className="flex items-center gap-3 text-white/80">
             <span>Liverpool, NY Landscaping</span>
             <span>•</span>
             <span>Reliable • Quality • Local</span>

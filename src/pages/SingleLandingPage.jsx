@@ -332,13 +332,13 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-sage font-sans">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-forest-deep font-sans">
               What We Do Best
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold font-serif text-forest-deep">
               Complete Care for Your Outdoor Space
             </h2>
-            <p className="text-sm sm:text-base text-charcoal/80">
+            <p className="text-sm sm:text-base text-gray-800">
               From weekly lawn mowing to full garden bed transformations, we offer comprehensive landscaping solutions tailored for Liverpool properties.
             </p>
           </div>
@@ -371,16 +371,16 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
             
             <div className="lg:col-span-6 space-y-6">
-              <span className="text-xs font-bold uppercase tracking-widest text-sage font-sans">
+              <span className="text-xs font-extrabold uppercase tracking-widest text-forest-deep font-sans">
                 Our Story &amp; Mission
               </span>
               <h2 className="text-3xl sm:text-4xl font-bold font-serif text-forest-deep">
                 Local Landscaping. Personal Service.
               </h2>
-              <p className="text-base text-charcoal/80 leading-relaxed">
+              <p className="text-base text-gray-800 leading-relaxed">
                 J Landscaping LLC was established to provide Liverpool homeowners and commercial property owners with reliable, high-grade landscaping services without the hassle.
               </p>
-              <p className="text-sm text-charcoal/80 leading-relaxed">
+              <p className="text-sm text-gray-800 leading-relaxed">
                 Whether routine lawn maintenance, seasonal cleanups, or installing fresh mulch and decorative stone, our mission is to make outdoor property care effortless for our clients. We believe that a neatly kept lawn and well-structured landscape enhance both property value and personal peace of mind.
               </p>
             </div>
@@ -397,12 +397,12 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-4 bg-white/80 rounded-xl space-y-2 text-xs">
+                <div className="p-4 bg-white/90 rounded-xl space-y-2 text-xs">
                   <div className="flex items-center gap-2 text-forest-deep font-bold">
-                    <MapPin className="w-4 h-4 text-lime-600 shrink-0" />
+                    <MapPin className="w-4 h-4 text-forest-deep shrink-0" />
                     <span>Based locally in Liverpool, NY 13088</span>
                   </div>
-                  <p className="text-charcoal/70">
+                  <p className="text-gray-800">
                     Serving residential lawns, HOA communities, and commercial grounds throughout Onondaga County.
                   </p>
                 </div>
@@ -414,7 +414,7 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
           {/* Core Values Grid */}
           <div className="mt-16 pt-16 border-t border-sand/40">
             <div className="text-center max-w-2xl mx-auto mb-12 space-y-2">
-              <span className="text-xs font-bold uppercase tracking-widest text-sage font-sans">
+              <span className="text-xs font-extrabold uppercase tracking-widest text-forest-deep font-sans">
                 Guiding Principles
               </span>
               <h3 className="text-2xl font-bold font-serif text-forest-deep">Our Core Values</h3>
@@ -428,11 +428,11 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
                     key={idx}
                     className="bg-white rounded-2xl p-6 shadow-premium border border-sand/40 space-y-3 hover:border-sage/40 transition-colors"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-sage/15 text-forest flex items-center justify-center">
+                    <div className="w-10 h-10 rounded-xl bg-sage/15 text-forest-deep flex items-center justify-center">
                       <Icon className="w-5 h-5" />
                     </div>
                     <h4 className="text-base font-bold font-serif text-forest-deep">{val.title}</h4>
-                    <p className="text-xs text-charcoal/70 leading-relaxed">{val.description}</p>
+                    <p className="text-xs text-gray-800 leading-relaxed">{val.description}</p>
                   </div>
                 );
               })}
@@ -446,13 +446,13 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-sage font-sans">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-forest-deep font-sans">
               The J Landscaping Difference
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold font-serif text-forest-deep">
               Why Liverpool Property Owners Choose J Landscaping LLC
             </h2>
-            <p className="text-sm sm:text-base text-charcoal/80">
+            <p className="text-sm sm:text-base text-gray-800">
               We treat every lawn and garden like our own property — with reliability, respect, and meticulous care.
             </p>
           </div>
@@ -465,11 +465,11 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
                   key={idx}
                   className="bg-white rounded-2xl p-6 shadow-premium border border-sand/40 text-center space-y-3 hover:border-sage/40 transition-colors"
                 >
-                  <div className="w-12 h-12 rounded-full bg-sage/15 border border-sage/30 text-forest flex items-center justify-center mx-auto">
+                  <div className="w-12 h-12 rounded-full bg-sage/15 border border-sage/30 text-forest-deep flex items-center justify-center mx-auto">
                     <Icon className="w-6 h-6" />
                   </div>
                   <h3 className="text-base font-bold font-serif text-forest-deep">{item.title}</h3>
-                  <p className="text-xs text-charcoal/70 leading-relaxed">{item.description}</p>
+                  <p className="text-xs text-gray-800 leading-relaxed">{item.description}</p>
                 </div>
               );
             })}
@@ -483,13 +483,13 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           
           <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
-            <span className="text-xs font-bold uppercase tracking-widest text-sage font-sans">
+            <span className="text-xs font-extrabold uppercase tracking-widest text-forest-deep font-sans">
               Client Satisfaction
             </span>
             <h2 className="text-3xl sm:text-4xl font-bold font-serif text-forest-deep">
               What Our Customers Say
             </h2>
-            <p className="text-sm sm:text-base text-charcoal/80">
+            <p className="text-sm sm:text-base text-gray-800">
               Read honest feedback from homeowners and property managers in Liverpool, NY.
             </p>
           </div>
@@ -498,31 +498,27 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
             {REVIEWS_PREVIEW.map((rev) => (
               <div
                 key={rev.id}
-                className="bg-white rounded-3xl p-6 sm:p-8 shadow-premium border border-sand/40 flex flex-col justify-between space-y-6 hover:border-sage/40 transition-colors"
+                className="bg-white rounded-3xl p-6 sm:p-8 shadow-premium border border-sand/40 flex flex-col justify-between space-y-6 hover:shadow-2xl transition-all"
               >
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-1 text-gold">
+                    <div className="flex items-center gap-1 text-amber-500">
                       {[...Array(rev.rating)].map((_, i) => (
-                        <Star key={i} className="w-4 h-4 fill-gold text-gold" />
+                        <Star key={i} className="w-4 h-4 fill-current" />
                       ))}
                     </div>
-                    <Quote className="w-8 h-8 text-sand-dark/40" />
+                    <span className="text-xs text-gray-800 font-semibold bg-gray-100 px-2.5 py-1 rounded-full">
+                      {rev.service}
+                    </span>
                   </div>
-
-                  <p className="text-sm text-charcoal/80 italic leading-relaxed">
+                  <p className="text-sm text-gray-800 leading-relaxed italic">
                     "{rev.review}"
                   </p>
                 </div>
 
-                <div className="pt-4 border-t border-sand/30 flex items-center justify-between">
-                  <div>
-                    <h3 className="text-base font-bold font-serif text-forest-deep">{rev.name}</h3>
-                    <span className="text-xs text-charcoal/60">{rev.location}</span>
-                  </div>
-                  <span className="text-[11px] font-semibold px-2.5 py-1 bg-sand/30 rounded-md text-forest">
-                    {rev.service}
-                  </span>
+                <div className="flex items-center justify-between pt-4 border-t border-sand/30 text-xs">
+                  <span className="font-bold text-forest-deep">{rev.name}</span>
+                  <span className="text-gray-800">{rev.location}</span>
                 </div>
               </div>
             ))}
@@ -550,13 +546,13 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
                   </div>
                   <div>
                     <h2 className="text-xl font-bold font-serif text-forest-deep">J Landscaping LLC</h2>
-                    <span className="text-xs text-charcoal/60">Liverpool, NY Property Maintenance</span>
+                    <span className="text-xs text-gray-800 font-medium">Liverpool, NY Property Maintenance</span>
                   </div>
                 </div>
 
-                <div className="space-y-4 text-sm text-charcoal/80">
+                <div className="space-y-4 text-sm text-gray-800">
                   <div className="flex items-start gap-3">
-                    <MapPin className="w-5 h-5 text-lime-600 shrink-0 mt-0.5" />
+                    <MapPin className="w-5 h-5 text-forest-deep shrink-0 mt-0.5" />
                     <div>
                       <strong className="block text-forest-deep">Address</strong>
                       <span>106 Kings Park Dr, Liverpool, NY 13090</span>
@@ -564,27 +560,27 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <Phone className="w-5 h-5 text-lime-600 shrink-0 mt-0.5" />
+                    <Phone className="w-5 h-5 text-forest-deep shrink-0 mt-0.5" />
                     <div>
                       <strong className="block text-forest-deep">Phone / Text</strong>
-                      <a href="tel:7745045296" className="hover:text-lime-600 transition-colors font-semibold">
+                      <a href="tel:7745045296" className="text-forest-deep hover:underline transition-colors font-bold">
                         (774) 504-5296
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <Mail className="w-5 h-5 text-lime-600 shrink-0 mt-0.5" />
+                    <Mail className="w-5 h-5 text-forest-deep shrink-0 mt-0.5" />
                     <div>
                       <strong className="block text-forest-deep">Email</strong>
-                      <a href="mailto:albany@kdtreeservices.com" className="hover:text-lime-600 transition-colors break-all">
+                      <a href="mailto:albany@kdtreeservices.com" className="text-forest-deep hover:underline transition-colors font-bold break-all">
                         albany@kdtreeservices.com
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-start gap-3">
-                    <Clock className="w-5 h-5 text-lime-600 shrink-0 mt-0.5" />
+                    <Clock className="w-5 h-5 text-forest-deep shrink-0 mt-0.5" />
                     <div>
                       <strong className="block text-forest-deep">Operating Hours</strong>
                       <span>Monday – Saturday: 7:00 AM – 6:00 PM</span>
@@ -610,8 +606,8 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
                   </div>
                 ) : (
                   <div className="aspect-video bg-gray-50 rounded-2xl border border-gray-200 flex flex-col items-center justify-center p-4 space-y-2">
-                    <Map className="w-8 h-8 text-lime-600/80" />
-                    <p className="text-xs text-charcoal/60">Click to load interactive Liverpool map</p>
+                    <Map className="w-8 h-8 text-forest-deep" />
+                    <p className="text-xs text-gray-800 font-medium">Click to load interactive Liverpool map</p>
                     <button
                       type="button"
                       onClick={() => setShowMap(true)}

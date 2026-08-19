@@ -72,18 +72,18 @@ const TransformationCard = ({ project }) => {
       <div>
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-2">
           <div>
-            <span className="text-xs font-bold uppercase tracking-wider text-lime-600 font-sans">
+            <span className="text-xs font-extrabold uppercase tracking-wider text-forest-deep font-sans">
               {project.location} Transformation
             </span>
             <h3 className="text-xl font-bold font-serif text-forest-deep">{project.title}</h3>
           </div>
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-lime-50 text-forest-deep text-xs font-semibold self-start sm:self-auto border border-lime-200">
-            <Sparkles className="w-3.5 h-3.5 text-lime-600" />
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-forest-deep/10 text-forest-deep text-xs font-bold self-start sm:self-auto border border-forest-deep/20">
+            <Sparkles className="w-3.5 h-3.5 text-forest-deep" />
             <span>Before / After</span>
           </div>
         </div>
 
-        <p className="text-sm text-charcoal/70 leading-relaxed mb-2">{project.description}</p>
+        <p className="text-sm text-gray-800 leading-relaxed mb-2">{project.description}</p>
       </div>
 
       {/* Interactive Image Container */}
@@ -103,7 +103,7 @@ const TransformationCard = ({ project }) => {
         />
 
         {/* AFTER Label */}
-        <span className="absolute top-3 right-3 bg-forest-deep/90 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-md z-10 pointer-events-none">
+        <span className="absolute top-3 right-3 bg-forest-deep text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-md z-10 pointer-events-none">
           AFTER
         </span>
 
@@ -121,7 +121,7 @@ const TransformationCard = ({ project }) => {
             className="w-full h-full object-cover"
           />
           {/* BEFORE Label */}
-          <span className="absolute top-3 left-3 bg-black/80 text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-md">
+          <span className="absolute top-3 left-3 bg-black text-white text-xs font-bold px-2.5 py-1 rounded-md shadow-md">
             BEFORE
           </span>
         </div>
@@ -137,7 +137,7 @@ const TransformationCard = ({ project }) => {
         </div>
       </div>
 
-      <div className="text-center text-xs text-charcoal/50 font-medium pt-1">
+      <div className="text-center text-xs text-gray-800 font-semibold pt-1">
         ⟵ Drag slider to compare Before &amp; After ⟶
       </div>
     </div>
@@ -151,13 +151,13 @@ const BeforeAfterSlider = () => {
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-14 space-y-3">
-          <span className="text-xs font-bold uppercase tracking-widest text-lime-600 font-sans">
+          <span className="text-xs font-extrabold uppercase tracking-widest text-forest-deep font-sans">
             Real Liverpool Transformations
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold font-serif text-forest-deep">
             From Overgrown to Outstanding
           </h2>
-          <p className="text-base text-charcoal/70">
+          <p className="text-base text-gray-800">
             Drag the slider to see how J Landscaping LLC elevates local residential properties across Liverpool and Onondaga County, NY.
           </p>
         </div>
