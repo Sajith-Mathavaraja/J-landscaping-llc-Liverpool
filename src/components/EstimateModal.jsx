@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { X } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 const EstimateModal = ({ isOpen, onClose }) => {
   const modalRef = useRef(null);
@@ -32,7 +33,7 @@ const EstimateModal = ({ isOpen, onClose }) => {
         <div className="bg-forest-deep text-white px-6 py-4 flex items-center justify-between shrink-0">
           <div className="flex items-center gap-3">
             <img
-              src="/images/logo.webp"
+              src={getAssetUrl('/images/logo.webp')}
               alt="J Landscaping LLC"
               width="36"
               height="36"

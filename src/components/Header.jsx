@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 const NAV_ITEMS = [
   { label: 'Home', targetId: 'home', num: '01' },
@@ -65,7 +66,7 @@ const Header = ({ onOpenEstimate }) => {
             aria-label="J Landscaping LLC Home"
           >
             <img
-              src="/images/logo.webp"
+              src={getAssetUrl('/images/logo.webp')}
               alt="J Landscaping LLC Logo"
               width="40"
               height="40"

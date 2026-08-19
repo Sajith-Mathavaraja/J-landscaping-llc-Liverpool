@@ -1,5 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock, ArrowUpRight } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 const Footer = ({ onOpenEstimate, onOpenTerms, onOpenPrivacy }) => {
   const scrollToSection = (targetId) => {
@@ -20,7 +21,7 @@ const Footer = ({ onOpenEstimate, onOpenTerms, onOpenPrivacy }) => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="/images/logo.webp"
+                src={getAssetUrl('/images/logo.webp')}
                 alt="J Landscaping LLC Logo"
                 width="44"
                 height="44"

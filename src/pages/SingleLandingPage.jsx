@@ -29,12 +29,13 @@ import SEO from '../components/SEO';
 import ServiceCard from '../components/ServiceCard';
 import BeforeAfterSlider from '../components/BeforeAfterSlider';
 import ProcessTimeline from '../components/ProcessTimeline';
+import { getAssetUrl } from '../utils/assets';
 
 const SERVICES_DATA = [
   {
     id: 'lawn-care',
     icon: Scissors,
-    image: '/images/services/lawn-care.webp',
+    image: getAssetUrl('/images/services/lawn-care.webp'),
     title: 'Lawn Care & Maintenance',
     description: 'Mowing, trimming, edging and routine lawn maintenance to keep your grass healthy, sharp, and vibrant.',
     benefits: ['Weekly & Bi-Weekly Mowing', 'Precision Edging', 'Grass Clipping Cleanup']
@@ -42,7 +43,7 @@ const SERVICES_DATA = [
   {
     id: 'landscape-design',
     icon: Flower2,
-    image: '/images/services/landscape-design.webp',
+    image: getAssetUrl('/images/services/landscape-design.webp'),
     title: 'Landscape Design & Installation',
     description: 'Transform outdoor spaces with thoughtful landscape design, plant selection, and professional installation.',
     benefits: ['Custom Bed Layouts', 'Perennial & Shrub Planting', 'Soil Preparation']
@@ -50,7 +51,7 @@ const SERVICES_DATA = [
   {
     id: 'mulch-stone',
     icon: Layers,
-    image: '/images/services/mulch-stone.webp',
+    image: getAssetUrl('/images/services/mulch-stone.webp'),
     title: 'Mulch & Decorative Stone',
     description: 'Refresh landscape beds with quality triple-shredded dark mulch and decorative river stone for plant protection.',
     benefits: ['Weed Suppression', 'Moisture Retention', 'Clean Edge Definition']
@@ -58,7 +59,7 @@ const SERVICES_DATA = [
   {
     id: 'shrub-plant',
     icon: Trees,
-    image: '/images/services/shrub-plant.webp',
+    image: getAssetUrl('/images/services/shrub-plant.webp'),
     title: 'Shrub & Plant Care',
     description: 'Pruning, trimming and seasonal plant maintenance to foster healthy growth and crisp hedge aesthetics.',
     benefits: ['Hedge Trimming', 'Ornamental Tree Care', 'Seasonal Pruning']
@@ -66,7 +67,7 @@ const SERVICES_DATA = [
   {
     id: 'spring-fall-cleanup',
     icon: Sun,
-    image: '/images/services/spring-fall-cleanup.webp',
+    image: getAssetUrl('/images/services/spring-fall-cleanup.webp'),
     title: 'Spring & Fall Cleanup',
     description: 'Remove leaves, fallen branches and seasonal debris so your lawn stays healthy year-round in Liverpool, NY.',
     benefits: ['Leaf Removal & Composting', 'Bed Blowout', 'Gutter Debris Cleaning']
@@ -74,7 +75,7 @@ const SERVICES_DATA = [
   {
     id: 'sod-installation',
     icon: Sprout,
-    image: '/images/services/sod-installation.webp',
+    image: getAssetUrl('/images/services/sod-installation.webp'),
     title: 'Sod & Lawn Installation',
     description: 'Create or restore a healthy, instant, attractive lawn with premium Kentucky Bluegrass sod installation.',
     benefits: ['Soil Grading', 'Instant Green Turf', 'Establishment Guidance']
@@ -82,7 +83,7 @@ const SERVICES_DATA = [
   {
     id: 'hardscaping',
     icon: Shovel,
-    image: '/images/services/hardscaping.webp',
+    image: getAssetUrl('/images/services/hardscaping.webp'),
     title: 'Hardscaping',
     description: 'Walkways, patios, borders and outdoor living improvements crafted with durable pavers and stone.',
     benefits: ['Stone Walkways', 'Paver Patios', 'Retaining Walls']
@@ -90,7 +91,7 @@ const SERVICES_DATA = [
   {
     id: 'property-cleanup',
     icon: Sparkles,
-    image: '/images/services/property-cleanup.webp',
+    image: getAssetUrl('/images/services/property-cleanup.webp'),
     title: 'Property Cleanup',
     description: 'General outdoor property cleanup and overhaul for neglected yards, overgrown beds, or storm debris.',
     benefits: ['Brush Removal', 'Overgrowth Clearing', 'Haul-Away Service']
@@ -260,9 +261,9 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
       {/* 1. HERO SECTION (#home) */}
       <section id="home" className="relative pt-28 pb-16 sm:pt-36 sm:pb-24 lg:pt-44 lg:pb-36 text-white overflow-hidden min-h-[85vh] sm:min-h-[88vh] flex items-center">
         <picture className="absolute inset-0 w-full h-full z-0">
-          <source media="(max-width: 768px)" srcSet="/images/hero-mobile.webp" type="image/webp" />
+          <source media="(max-width: 768px)" srcSet={getAssetUrl('/images/hero-mobile.webp')} type="image/webp" />
           <img
-            src="/images/hero-landscape.webp"
+            src={getAssetUrl('/images/hero-landscape.webp')}
             alt="Golden sunset lawn mowing and professional property landscaping by J Landscaping LLC in Liverpool NY"
             width="1400"
             height="788"
@@ -370,7 +371,7 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
               <div className="bg-white rounded-3xl p-4 shadow-organic border border-sand/40 space-y-4">
                 <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-inner">
                   <img
-                    src="/images/about-team.webp"
+                    src={getAssetUrl('/images/about-team.webp')}
                     alt="J Landscaping LLC property maintenance service in Liverpool NY"
                     width="800"
                     height="600"
@@ -522,7 +523,7 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
                 <div className="flex items-center gap-3 pb-6 border-b border-gray-100">
                   <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center">
                     <img
-                      src="/images/logo.webp"
+                      src={getAssetUrl('/images/logo.webp')}
                       alt="J Landscaping LLC Logo"
                       width="40"
                       height="40"

@@ -1,21 +1,22 @@
 import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { Sparkles, ArrowLeftRight } from 'lucide-react';
+import { getAssetUrl } from '../utils/assets';
 
 const PROJECTS = [
   {
     id: 1,
     title: 'Lawn Restoration & Precision Edging',
     description: 'Transformed an overgrown weeds-dominated front yard into a lush, stripe-mowed manicured lawn with razor-sharp edges along the driveway and walkways.',
-    before: '/images/before-1.webp',
-    after: '/images/after-1.webp',
+    before: getAssetUrl('/images/before-1.webp'),
+    after: getAssetUrl('/images/after-1.webp'),
     location: 'Liverpool, NY'
   },
   {
     id: 2,
     title: 'Mulch Bed & Plant Bed Renovation',
     description: 'Cleared neglected weed beds, re-defined landscape borders, installed premium dark chocolate mulch, and planted vibrant hostas and hydrangeas.',
-    before: '/images/before-2.webp',
-    after: '/images/after-2.webp',
+    before: getAssetUrl('/images/before-2.webp'),
+    after: getAssetUrl('/images/after-2.webp'),
     location: 'Clay, NY'
   }
 ];
