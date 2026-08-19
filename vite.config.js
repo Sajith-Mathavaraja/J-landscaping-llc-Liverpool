@@ -6,16 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     target: 'es2020',
-    cssCodeSplit: true,
+    cssCodeSplit: false,
     sourcemap: false,
-    minify: 'esbuild',
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom'],
-          icons: ['lucide-react']
-        }
-      }
-    }
+    minify: 'esbuild'
   }
 });
