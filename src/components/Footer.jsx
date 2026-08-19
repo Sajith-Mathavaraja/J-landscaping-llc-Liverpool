@@ -47,9 +47,9 @@ const Footer = ({ onOpenEstimate, onOpenTerms, onOpenPrivacy }) => {
 
           {/* Col 2: Navigation Links */}
           <div>
-            <h4 className="text-base font-bold text-lime-400 uppercase tracking-wider mb-4 font-serif">
+            <h3 className="text-base font-bold text-lime-400 uppercase tracking-wider mb-4 font-serif">
               Quick Links
-            </h4>
+            </h3>
             <ul className="space-y-2.5 text-sm">
               {[
                 { label: 'Home', targetId: 'home' },
@@ -74,9 +74,9 @@ const Footer = ({ onOpenEstimate, onOpenTerms, onOpenPrivacy }) => {
 
           {/* Col 3: Services Offered */}
           <div>
-            <h4 className="text-base font-bold text-lime-400 uppercase tracking-wider mb-4 font-serif">
+            <h3 className="text-base font-bold text-lime-400 uppercase tracking-wider mb-4 font-serif">
               Our Services
-            </h4>
+            </h3>
             <ul className="space-y-2 text-sm text-sand/80">
               <li>• Lawn Care &amp; Maintenance</li>
               <li>• Landscape Design &amp; Installation</li>
@@ -91,9 +91,9 @@ const Footer = ({ onOpenEstimate, onOpenTerms, onOpenPrivacy }) => {
 
           {/* Col 4: Local Contact & Hours */}
           <div className="space-y-3">
-            <h4 className="text-base font-bold text-lime-400 uppercase tracking-wider mb-4 font-serif">
+            <h3 className="text-base font-bold text-lime-400 uppercase tracking-wider mb-4 font-serif">
               Liverpool Location
-            </h4>
+            </h3>
             <div className="flex items-start gap-3 text-sm text-sand/90">
               <MapPin className="w-5 h-5 text-lime-400 shrink-0 mt-0.5" />
               <span>106 Kings Park Dr, Liverpool, NY 13090</span>
