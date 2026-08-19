@@ -22,8 +22,7 @@ const SEO = ({ title, description, path = '' }) => {
       canonical.rel = 'canonical';
       document.head.appendChild(canonical);
     }
-    const origin = window.location.origin || 'https://jlandscapingllc.com';
-    canonical.href = `${origin}${path}`;
+    canonical.href = window.location.href;
   }, [title, description, path]);
 
   return null;
