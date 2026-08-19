@@ -220,6 +220,24 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
   const [formSubmitting, setFormSubmitting] = useState(false);
   const [showMap, setShowMap] = useState(false);
 
+  useEffect(() => {
+    // Lazy load third party form embed script after initial load to keep initial Lighthouse score clean
+    const loadEmbedScript = () => {
+      if (!document.getElementById('kdlead-embed-script')) {
+        const script = document.createElement('script');
+        script.id = 'kdlead-embed-script';
+        script.src = 'https://link.kdlead.com/js/form_embed.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+    };
+    if ('requestIdleCallback' in window) {
+      window.requestIdleCallback(loadEmbedScript, { timeout: 2500 });
+    } else {
+      setTimeout(loadEmbedScript, 2000);
+    }
+  }, []);
+
   const scrollToSection = (targetId) => {
     const element = document.getElementById(targetId);
     if (element) {
@@ -618,6 +636,7 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
               <div className="w-full min-h-[650px] rounded-2xl overflow-hidden">
                 <iframe
                   src="https://link.kdlead.com/widget/form/ZwAXZVBFNosWlFUs1SPx"
+                  loading="lazy"
                   style={{ width: '100%', height: '100%', minHeight: '650px', border: 'none', borderRadius: '8px' }}
                   id="inline-ZwAXZVBFNosWlFUs1SPx" 
                   data-layout="{'id':'INLINE'}"
@@ -631,7 +650,7 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
                   data-height="953"
                   data-layout-iframe-id="inline-ZwAXZVBFNosWlFUs1SPx"
                   data-form-id="ZwAXZVBFNosWlFUs1SPx"
-                  title="Form 0"
+                  title="Request Free Estimate Form"
                 ></iframe>
               </div>
             </div>

@@ -5,7 +5,7 @@ import { getAssetUrl } from '../utils/assets';
 const EstimateModal = ({ isOpen, onClose }) => {
   const modalRef = useRef(null);
 
-  // Close on Escape key press
+  // Close on Escape key press & dynamically load embed script when modal opens
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key === 'Escape' && isOpen) {
@@ -14,6 +14,13 @@ const EstimateModal = ({ isOpen, onClose }) => {
     };
     if (isOpen) {
       window.addEventListener('keydown', handleKeyDown);
+      if (!document.getElementById('kdlead-embed-script')) {
+        const script = document.createElement('script');
+        script.id = 'kdlead-embed-script';
+        script.src = 'https://link.kdlead.com/js/form_embed.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
     }
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, onClose]);
