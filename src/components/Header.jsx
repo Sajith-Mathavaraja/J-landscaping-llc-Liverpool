@@ -101,17 +101,6 @@ const Header = ({ onOpenEstimate }) => {
             })}
           </nav>
 
-          {/* Desktop CTA Button */}
-          <div className="hidden lg:flex items-center">
-            <button
-              onClick={onOpenEstimate}
-              className="bg-lime-500 hover:bg-lime-400 text-black font-extrabold px-6 py-2.5 rounded-full shadow-lg hover:shadow-lime-500/30 transition-all text-sm flex items-center gap-2 focus-ring transform hover:-translate-y-0.5 active:translate-y-0"
-            >
-              Get Started
-              <ArrowRight className="w-4 h-4" />
-            </button>
-          </div>
-
           {/* Mobile Hamburger Button + Quick CTA */}
           <div className="flex md:hidden items-center gap-2">
             <button
