@@ -52,7 +52,7 @@ const Header = ({ onOpenEstimate }) => {
         mobileMenuOpen
           ? 'bg-forest-deep text-white shadow-2xl py-2.5 border-b border-white/10'
           : isScrolled
-            ? 'bg-white/97 backdrop-blur-md shadow-md py-2 border-b border-gray-100'
+            ? 'bg-white shadow-md py-2 border-b border-gray-100'
             : 'bg-gradient-to-b from-black/80 via-black/40 to-transparent py-4 sm:py-5'
       }`}
     >
