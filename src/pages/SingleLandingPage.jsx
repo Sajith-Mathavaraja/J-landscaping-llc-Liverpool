@@ -582,7 +582,7 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
             </div>
 
             {/* Form */}
-            <div className="lg:col-span-7 bg-white text-charcoal rounded-3xl px-0 py-6 sm:p-8 shadow-premium border border-gray-200 overflow-hidden">
+            <div className="lg:col-span-7 bg-white text-charcoal rounded-3xl px-0 py-6 sm:p-8 shadow-premium border border-gray-200 overflow-x-hidden">
               <h2 className="text-2xl font-bold font-serif text-forest-deep mb-2 px-4 sm:px-0">
                 Request Your Free Estimate
               </h2>
@@ -590,7 +590,7 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
                 Fill out the form below and our team will get back to you promptly with a quote or to schedule an on-site property evaluation.
               </p>
 
-              <div className="w-full min-h-[750px] rounded-2xl overflow-hidden bg-white px-2 sm:px-0">
+              <div className="w-full min-h-[750px] rounded-2xl overflow-x-hidden bg-white">
                 <iframe
                   src="https://link.kdlead.com/widget/form/ZwAXZVBFNosWlFUs1SPx"
                   style={{ width: '100%', maxWidth: '100%', height: '953px', minHeight: '750px', border: 'none', borderRadius: '8px' }}
