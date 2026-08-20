@@ -520,10 +520,10 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
 
       {/* 7. CONTACT SECTION (#contact) */}
       <section id="contact" className="py-20 bg-white border-t border-gray-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-0 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             
-            <div className="lg:col-span-5 space-y-6">
+            <div className="lg:col-span-5 space-y-6 px-4 sm:px-0">
               <div className="bg-white border border-gray-200 rounded-3xl p-6 sm:p-8 shadow-sm space-y-6">
                 <div className="flex items-center gap-3 pb-6 border-b border-gray-100">
                   <div className="w-10 h-10 rounded-full overflow-hidden flex items-center justify-center">
@@ -582,7 +582,7 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
             </div>
 
             {/* Form */}
-            <div className="lg:col-span-7 bg-white text-charcoal rounded-3xl px-0 py-6 sm:p-8 shadow-premium border border-gray-200 overflow-x-hidden">
+            <div className="lg:col-span-7 bg-white text-charcoal sm:rounded-3xl px-0 py-6 sm:p-8 sm:shadow-premium sm:border sm:border-gray-200 overflow-x-hidden">
               <h2 className="text-2xl font-bold font-serif text-forest-deep mb-2 px-4 sm:px-0">
                 Request Your Free Estimate
               </h2>
