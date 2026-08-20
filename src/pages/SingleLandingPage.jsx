@@ -219,20 +219,13 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
   const [formSubmitting, setFormSubmitting] = useState(false);
 
   useEffect(() => {
-    // Lazy load third party form embed script after initial load to keep initial Lighthouse score clean
-    const loadEmbedScript = () => {
-      if (!document.getElementById('kdlead-embed-script')) {
-        const script = document.createElement('script');
-        script.id = 'kdlead-embed-script';
-        script.src = 'https://link.kdlead.com/js/form_embed.js';
-        script.async = true;
-        document.body.appendChild(script);
-      }
-    };
-    if ('requestIdleCallback' in window) {
-      window.requestIdleCallback(loadEmbedScript, { timeout: 2500 });
-    } else {
-      setTimeout(loadEmbedScript, 2000);
+    const scriptId = 'kdlead-embed-script';
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement('script');
+      script.id = scriptId;
+      script.src = 'https://link.kdlead.com/js/form_embed.js';
+      script.async = true;
+      document.body.appendChild(script);
     }
   }, []);
 
@@ -597,11 +590,10 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
                 Fill out the form below and our team will get back to you promptly with a quote or to schedule an on-site property evaluation.
               </p>
 
-              <div className="w-full min-h-[650px] rounded-2xl overflow-hidden">
+              <div className="w-full min-h-[750px] rounded-2xl overflow-hidden bg-white">
                 <iframe
                   src="https://link.kdlead.com/widget/form/ZwAXZVBFNosWlFUs1SPx"
-                  loading="lazy"
-                  style={{ width: '100%', height: '100%', minHeight: '650px', border: 'none', borderRadius: '8px' }}
+                  style={{ width: '100%', height: '953px', minHeight: '750px', border: 'none', borderRadius: '8px' }}
                   id="inline-ZwAXZVBFNosWlFUs1SPx" 
                   data-layout="{'id':'INLINE'}"
                   data-trigger-type="alwaysShow"
