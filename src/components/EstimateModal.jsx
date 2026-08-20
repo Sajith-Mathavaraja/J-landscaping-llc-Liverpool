@@ -69,6 +69,7 @@ const EstimateModal = ({ isOpen, onClose }) => {
             src="https://link.kdlead.com/widget/form/ZwAXZVBFNosWlFUs1SPx"
             style={{ width: '100%', height: '100%', minHeight: '650px', border: 'none', borderRadius: '8px' }}
             id="modal-inline-ZwAXZVBFNosWlFUs1SPx"
+            scrolling="no"
             data-layout="{'id':'INLINE'}"
             data-trigger-type="alwaysShow"
             data-trigger-value=""
