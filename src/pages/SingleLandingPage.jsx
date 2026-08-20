@@ -22,7 +22,6 @@ import {
   Phone,
   Mail,
   Send,
-  Map,
   Quote
 } from 'lucide-react';
 import SEO from '../components/SEO';
@@ -218,7 +217,6 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
   const [formErrors, setFormErrors] = useState({});
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formSubmitting, setFormSubmitting] = useState(false);
-  const [showMap, setShowMap] = useState(false);
 
   useEffect(() => {
     // Lazy load third party form embed script after initial load to keep initial Lighthouse score clean
@@ -587,36 +585,6 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
                     </div>
                   </div>
                 </div>
-              </div>
-
-              {/* Lazy Load Map */}
-              <div className="bg-white border border-gray-200 rounded-3xl p-6 text-center space-y-4 shadow-sm">
-                <h3 className="text-base font-bold font-serif text-forest-deep">Liverpool Service Location Map</h3>
-                {showMap ? (
-                  <div className="aspect-video rounded-2xl overflow-hidden border border-gray-200">
-                    <iframe
-                      title="J Landscaping LLC Liverpool NY Service Map"
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      loading="lazy"
-                      allowFullScreen
-                      src="https://maps.google.com/maps?q=106+Kings+Park+Dr%2C+Liverpool%2C+NY+13090&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                    ></iframe>
-                  </div>
-                ) : (
-                  <div className="aspect-video bg-gray-50 rounded-2xl border border-gray-200 flex flex-col items-center justify-center p-4 space-y-2">
-                    <Map className="w-8 h-8 text-forest-deep" />
-                    <p className="text-xs text-gray-800 font-medium">Click to load interactive Liverpool map</p>
-                    <button
-                      type="button"
-                      onClick={() => setShowMap(true)}
-                      className="bg-lime-500 text-black font-extrabold text-xs px-4 py-2 rounded-full hover:bg-lime-400 transition-colors focus-ring"
-                    >
-                      Load Liverpool Map
-                    </button>
-                  </div>
-                )}
               </div>
             </div>
 
