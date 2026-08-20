@@ -631,8 +631,8 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
                   ></iframe>
                 ) : (
                   <div className="w-full min-h-[750px] flex flex-col items-center justify-center bg-gray-50 border border-dashed border-gray-200 rounded-2xl p-4">
-                    <p className="text-sm text-gray-500 font-semibold">Loading secure form...</p>
-                    <p className="text-xs text-gray-400 mt-1">Please scroll or interact with the page to initialize</p>
+                    <p className="text-sm text-gray-800 font-bold">Loading secure form...</p>
+                    <p className="text-xs text-gray-700 mt-1.5 font-medium">Please scroll or interact with the page to initialize</p>
                   </div>
                 )}
               </div>
