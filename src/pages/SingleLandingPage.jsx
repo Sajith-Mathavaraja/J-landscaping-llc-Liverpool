@@ -582,11 +582,11 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
             </div>
 
             {/* Form */}
-            <div className="lg:col-span-7 bg-white text-charcoal rounded-3xl p-4 sm:p-8 shadow-premium border border-gray-200">
+            <div className="lg:col-span-7 bg-white text-charcoal rounded-3xl px-2 py-6 sm:p-8 shadow-premium border border-gray-200 overflow-hidden">
               <h2 className="text-2xl font-bold font-serif text-forest-deep mb-2">
                 Request Your Free Estimate
               </h2>
-              <p className="text-xs sm:text-sm text-charcoal/70 mb-4">
+              <p className="text-xs sm:text-sm text-charcoal/70 mb-4 px-2 sm:px-0">
                 Fill out the form below and our team will get back to you promptly with a quote or to schedule an on-site property evaluation.
               </p>
 
