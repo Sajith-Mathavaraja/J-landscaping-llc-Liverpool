@@ -217,16 +217,35 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
   const [formErrors, setFormErrors] = useState({});
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [formSubmitting, setFormSubmitting] = useState(false);
+  const [loadForm, setLoadForm] = useState(false);
 
   useEffect(() => {
-    const scriptId = 'kdlead-embed-script';
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement('script');
-      script.id = scriptId;
-      script.src = 'https://link.kdlead.com/js/form_embed.js';
-      script.async = true;
-      document.body.appendChild(script);
-    }
+    const triggerLoad = () => {
+      setLoadForm(true);
+
+      const scriptId = 'kdlead-embed-script';
+      if (!document.getElementById(scriptId)) {
+        const script = document.createElement('script');
+        script.id = scriptId;
+        script.src = 'https://link.kdlead.com/js/form_embed.js';
+        script.async = true;
+        document.body.appendChild(script);
+      }
+
+      window.removeEventListener('scroll', triggerLoad);
+      window.removeEventListener('mousemove', triggerLoad);
+      window.removeEventListener('touchstart', triggerLoad);
+    };
+
+    window.addEventListener('scroll', triggerLoad, { passive: true });
+    window.addEventListener('mousemove', triggerLoad, { passive: true });
+    window.addEventListener('touchstart', triggerLoad, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', triggerLoad);
+      window.removeEventListener('mousemove', triggerLoad);
+      window.removeEventListener('touchstart', triggerLoad);
+    };
   }, []);
 
   const scrollToSection = (targetId) => {
@@ -591,24 +610,31 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
               </p>
 
               <div className="w-full min-h-[750px] rounded-2xl overflow-x-hidden bg-white">
-                <iframe
-                  src="https://link.kdlead.com/widget/form/ZwAXZVBFNosWlFUs1SPx"
-                  style={{ width: '100%', maxWidth: '100%', height: '953px', minHeight: '750px', border: 'none', borderRadius: '8px' }}
-                  id="inline-ZwAXZVBFNosWlFUs1SPx" 
-                  scrolling="no"
-                  data-layout="{'id':'INLINE'}"
-                  data-trigger-type="alwaysShow"
-                  data-trigger-value=""
-                  data-activation-type="alwaysActivated"
-                  data-activation-value=""
-                  data-deactivation-type="neverDeactivate"
-                  data-deactivation-value=""
-                  data-form-name="Form 0"
-                  data-height="953"
-                  data-layout-iframe-id="inline-ZwAXZVBFNosWlFUs1SPx"
-                  data-form-id="ZwAXZVBFNosWlFUs1SPx"
-                  title="Request Free Estimate Form"
-                ></iframe>
+                {loadForm ? (
+                  <iframe
+                    src="https://link.kdlead.com/widget/form/ZwAXZVBFNosWlFUs1SPx"
+                    style={{ width: '100%', maxWidth: '100%', height: '953px', minHeight: '750px', border: 'none', borderRadius: '8px' }}
+                    id="inline-ZwAXZVBFNosWlFUs1SPx" 
+                    scrolling="no"
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="Form 0"
+                    data-height="953"
+                    data-layout-iframe-id="inline-ZwAXZVBFNosWlFUs1SPx"
+                    data-form-id="ZwAXZVBFNosWlFUs1SPx"
+                    title="Request Free Estimate Form"
+                  ></iframe>
+                ) : (
+                  <div className="w-full min-h-[750px] flex flex-col items-center justify-center bg-gray-50 border border-dashed border-gray-200 rounded-2xl p-4">
+                    <p className="text-sm text-gray-500 font-semibold">Loading secure form...</p>
+                    <p className="text-xs text-gray-400 mt-1">Please scroll or interact with the page to initialize</p>
+                  </div>
+                )}
               </div>
             </div>
 
