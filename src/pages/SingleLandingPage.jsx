@@ -582,18 +582,18 @@ const SingleLandingPage = ({ onOpenEstimate }) => {
             </div>
 
             {/* Form */}
-            <div className="lg:col-span-7 bg-white text-charcoal rounded-3xl px-2 py-6 sm:p-8 shadow-premium border border-gray-200 overflow-hidden">
-              <h2 className="text-2xl font-bold font-serif text-forest-deep mb-2">
+            <div className="lg:col-span-7 bg-white text-charcoal rounded-3xl px-0 py-6 sm:p-8 shadow-premium border border-gray-200 overflow-hidden">
+              <h2 className="text-2xl font-bold font-serif text-forest-deep mb-2 px-4 sm:px-0">
                 Request Your Free Estimate
               </h2>
-              <p className="text-xs sm:text-sm text-charcoal/70 mb-4 px-2 sm:px-0">
+              <p className="text-xs sm:text-sm text-charcoal/70 mb-4 px-4 sm:px-0">
                 Fill out the form below and our team will get back to you promptly with a quote or to schedule an on-site property evaluation.
               </p>
 
-              <div className="w-full min-h-[750px] rounded-2xl overflow-hidden bg-white">
+              <div className="w-full min-h-[750px] rounded-2xl overflow-hidden bg-white px-2 sm:px-0">
                 <iframe
                   src="https://link.kdlead.com/widget/form/ZwAXZVBFNosWlFUs1SPx"
-                  style={{ width: '100%', height: '953px', minHeight: '750px', border: 'none', borderRadius: '8px' }}
+                  style={{ width: '100%', maxWidth: '100%', height: '953px', minHeight: '750px', border: 'none', borderRadius: '8px' }}
                   id="inline-ZwAXZVBFNosWlFUs1SPx" 
                   scrolling="no"
                   data-layout="{'id':'INLINE'}"
