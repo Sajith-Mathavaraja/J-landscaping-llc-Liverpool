@@ -131,7 +131,7 @@ const Header = ({ onOpenEstimate }) => {
 
       {/* Tight Dropdown Menu Directly Under Navbar */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-forest-deep/98 backdrop-blur-xl shadow-2xl rounded-b-3xl border-b border-x border-white/15 p-3 sm:p-4 animate-fadeIn">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-forest-deep backdrop-blur-xl shadow-2xl rounded-b-3xl border-b border-x border-white/15 p-3 sm:p-4 animate-fadeIn">
           <nav className="flex flex-col space-y-1" aria-label="Mobile Navigation">
             {NAV_ITEMS.map((item) => {
               const isActive = activeSection === item.targetId;
